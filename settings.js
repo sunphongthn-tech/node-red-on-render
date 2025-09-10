@@ -9,7 +9,7 @@ if (process.env.ADMIN_USERNAME && process.env.ADMIN_PASSWORD_HASH) {
 
 module.exports = {
   uiPort: process.env.PORT || 3000,
-  userDir: "/data",
+  userDir: "/tmp/node-red-data",
   flowFile: "flows.json",
   flowFilePretty: true,
   editorTheme: { projects: { enabled: false } },
@@ -18,3 +18,4 @@ module.exports = {
   httpNodeRoot: "/",
   functionGlobalContext: {}
 };
+
